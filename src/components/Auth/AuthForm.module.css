@@ -14,7 +14,7 @@
 .block {
   display: flex;
   justify-content: center;
-  background-image: url("home.png");
+  background-image: url("/home.png");
   background-size: cover;
   position: absolute;
   top: 0;
