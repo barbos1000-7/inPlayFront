@@ -29,6 +29,7 @@ const Item = ({item}) => {
 
         return `${hours}:${minutes}`;
     }
+    console.log(item)
     return (
         <>
             <li className={style.item}>
@@ -44,7 +45,7 @@ const Item = ({item}) => {
                 </button> : <div  className={style.identif}> </div>}
             </li>
             {isModalOpen && <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <Video url={item.rtmpLink._text}/>
+                <Video url={item.rtmpLink?._text}/>
                 {/*<video src='https://gemetalkued.beget.app/movies.m3u8' />*/}
             </Modal>}
         </>

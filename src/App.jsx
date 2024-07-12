@@ -33,7 +33,6 @@ const App = () => {
         const response = await fetch("https://in-play-back.vercel.app/");
         const users = await response.json();
         const isAuthenticated = users.find(user => user.title === login && user.description === password);
-        console.log(isAuthenticated, 'user')
         localStorage.setItem('id', isAuthenticated.id)
         localStorage.setItem('name', isAuthenticated.title)
         setAuth(!!isAuthenticated);
