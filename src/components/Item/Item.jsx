@@ -32,7 +32,7 @@ const Item = ({item}) => {
     return (
         <>
             <li className={style.item}>
-                <div>{item.homeTeam._text ? item.homeTeam._text : 'team'} vs {item.awayTeam._text ? item.awayTeam._text : 'team'}</div>
+                <div>{item.homeTeam?._text ? item.homeTeam?._text : 'team'} vs {item.awayTeam?._text ? item.awayTeam?._text : 'team'}</div>
                 <div>{item.sport._text}</div>
                 <div
                     className={style.live}>{item.startDate._text.split(' ')[0] + ' ' + convertTime12to24(item.startDate._text.split(' ')[1] + ' ' + item.startDate._text.split(' ')[2])}
