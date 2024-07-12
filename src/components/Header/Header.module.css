@@ -1,0 +1,38 @@
+.header {
+  border-bottom: 1px solid rgb(198, 198, 198);
+  display: grid;
+  grid-template-columns: 50% 30%;
+  height: 70px;
+  justify-content: center;
+  background-color: #2e3740;
+  color: white;
+  align-items: center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+}
+
+.logout {
+  display: flex;
+  justify-content: right;
+  font-weight: 0;
+  font-size: 22px;
+}
+
+.admin {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.admin:hover {
+  color: red;
+}

@@ -1,0 +1,74 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.modalContent {
+  position: relative;
+  padding: 20px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #343D46;
+  border: 2px solid  rgba(52, 61, 70, 1.2);
+  height: 70px;
+  border-radius: 5px;
+}
+
+.btn {
+  margin: 5px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top:-10px;
+}
+.body {
+  opacity: .9;
+}
+
+.contentText {
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+
+  justify-content: center;
+  margin: auto;
+
+}
+
+.we {
+  color: rgb(222, 210, 210);
+  font-size: 15px;
+  font-weight: bold;
+
+  margin-top: 80px;
+}
+
+.btn2 {
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 1px solid rgb(149, 149, 149);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 200px;
+  transition: all 0.3s;
+}
+
+.btn2:hover {
+  background-color: rgb(210, 112, 112);
+}
