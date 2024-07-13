@@ -6,7 +6,7 @@ import ModalWelcome from "../ModalWelcome/ModalWelcome.jsx";
 const Content = ({items}) => {
     const [welcome, setWelcome] = useState(false)
     const decrementMinute = () => {
-        fetch(`https://in-play-back.vercel.app/minutesDecrement/${localStorage.getItem('id')}`, {
+        fetch(`http://localhost:4000/minutesDecrement/${localStorage.getItem('id')}`, {
             method: "get",
         })
             .then((response) => response.json())

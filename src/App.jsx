@@ -30,7 +30,7 @@ const App = () => {
 
 
     const checkLogin = async (login, password) => {
-        const response = await fetch("https://in-play-back.vercel.app/");
+        const response = await fetch("http://localhost:4000/");
         const users = await response.json();
         const isAuthenticated = users.find(user => user.title === login && user.description === password);
         localStorage.setItem('id', isAuthenticated.id)
@@ -83,7 +83,7 @@ const App = () => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://in-play-back.vercel.app//minutes/${localStorage.getItem('id')}`)
+        fetch(`http://localhost:4000/minutes/${localStorage.getItem('id')}`)
             .then(res => res.text())
             .then(data => {
                 console.log(data)
